@@ -2,7 +2,7 @@ package com.api.parkingcontrol.controllers;
 
 import com.api.parkingcontrol.dtos.ParkingSpotDto;
 import com.api.parkingcontrol.models.ParkingSpotModel;
-import com.api.parkingcontrol.services.ParkingSpotService;
+import com.api.parkingcontrol.services.ParkingSpotServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -23,9 +23,9 @@ import java.util.UUID;
 @RequestMapping("/parking-spot")
 public class ParkingSpotController {
 
-    final ParkingSpotService parkingSpotService;
+    final ParkingSpotServiceImpl parkingSpotService;
 
-    public ParkingSpotController(ParkingSpotService parkingSpotService) {
+    public ParkingSpotController(ParkingSpotServiceImpl parkingSpotService) {
         this.parkingSpotService = parkingSpotService;
     }
 
