@@ -3,9 +3,6 @@ package com.api.parkingcontrol.services;
 import java.util.Optional;
 import java.util.UUID;
 
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
-import org.springframework.data.domain.Page;
-
 import com.api.parkingcontrol.models.ParkingSpotModel;
 
 public interface ParkingSpotService {
