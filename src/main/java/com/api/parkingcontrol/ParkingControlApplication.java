@@ -12,8 +12,7 @@ public class ParkingControlApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ParkingControlApplication.class, args);
-
-		System.out.println("\n\n\n\n"+ new BCryptPasswordEncoder().encode("admin") );
+		// System.out.println("\n\n\n\n"+ new BCryptPasswordEncoder().encode("admin") );
 	}
 
 	@Override
